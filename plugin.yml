@@ -1,0 +1,22 @@
+name: JumpPads
+main: com.tehelee.jumpPads.Main
+version: 1.10.2.4
+
+commands:
+  jumppads:
+    usage: /jumppads
+    aliases: [jp, jumppad]
+
+permissions:
+  permissions.jumpPads.*:
+    description: Gives access to all Jump Pad commands
+    default: op
+    children:
+      permissions.jumpPads.reload: true
+      permissions.jumpPads.create: true
+  permissions.jumpPads.create:
+    description: Allows the creation and modification of Jump Pads
+    default: op
+  permissions.jumpPads.reload:
+    description: Allows the user to reload the plugin
+    default: op
